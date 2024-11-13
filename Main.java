@@ -9,11 +9,24 @@ public class Main
 
   public static int countSub(String word, String target)
   {
-    return 0;
+    String s = "gagagigo the risen";
+    String target = "ga";
+
+    int count = 0;
+    for (int i = 0; i<s.length()-(target.length()-1); i++)
+    {
+      String L = s.substring(i,i+target.length());
+      if (L.equals(target))
+      {
+        count ++;
+      }
+    }
+    return count;
   }
 
   public static int countProperContains(String word, String target)
   {
+    
     return 0;
   }
 
