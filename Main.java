@@ -40,7 +40,7 @@ public class Main
       int endOfTarget = i + target.length();
       endOrSpaceAfter = (endOfTarget == word.length()) || word.substring(endOfTarget, endOfTarget+1).equals(" "); 
 
-      if (beginOrSpaceBefore && endOrSpaceAfter)
+      if ((beginOrSpaceBefore && endOrSpaceAfter) && L.equals(target))
       {
         count ++;
       }
